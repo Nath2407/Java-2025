@@ -40,4 +40,4 @@ Total a pagar: $510.0
 - Solo operadores básicos y ternarios.
 - El descuento solo debe calcularse si el total supera los $500.00.
 
-🏆 ¡Nos vemos en el siguiente reto! 🎉
+
