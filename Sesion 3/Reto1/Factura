@@ -1,0 +1,25 @@
+import java.util.Optional;
+
+public class Factura {
+    private Optional<String> rfc;  // RFC puede estar presente o no
+
+    public Factura(String rfc) {
+        this.rfc = Optional.ofNullable(rfc);
+    }
+
+    public void mostrarRFC() {
+        // Usar ifPresent para imprimir si existe RFC
+        rfc.ifPresentOrElse(
+            valor -> System.out.println("RFC: " + valor),
+            () -> System.out.println("RFC no proporcionado")
+        );
+    }
+
+    public static void main(String[] args) {
+        Factura facturaConRFC = new Factura("XAXX010101000");
+        Factura facturaSinRFC = new Factura(null);
+
+        facturaConRFC.mostrarRFC();   // Imprime RFC
+        facturaSinRFC.mostrarRFC();   // Imprime mensaje que no hay RFC
+    }
+}
