@@ -1,33 +1,59 @@
-🎯 Objetivo
-⚒️ Desarrollar un programa en Java que registre los datos de un paciente, aplicando los fundamentos de clases, objetos, atributos, métodos y la entrada de datos por consola.
+# 🧪 Fundamentos de Java - Programación Orientada a Objetos (POO)
 
-📝 Instrucciones
-👥 Puedes resolver este reto de manera individual o en equipos.
+## 🎯 Objetivo
 
-🩺 Crea una clase llamada Paciente.
+⚒️ Identificar y comprender los conceptos básicos de Java, incluyendo la **Programación Orientada a Objetos (POO)**, para aplicarlos en la creación de programas sencillos.
 
-📥 Utiliza la clase Scanner para solicitar los siguientes datos desde la consola:
+---
 
-Nombre del paciente (String)
-Edad del paciente (int)
-Número de expediente (String)
-🧱 Declara atributos en la clase Paciente para almacenar esta información.
+## 📚 Temas de la sesión
 
-📢 Agrega un método público llamado mostrarInformacion() que imprima el siguiente formato:
+### 📖 1. Introducción a Java y primeros pasos
 
-Paciente: Lena Marie  
-Edad: 25  
-Expediente: EXP202409
-🧪 Crea un archivo llamado Principal y dentro del método main():
+Java es un lenguaje de programación **orientado a objetos**, ampliamente utilizado en la industria.
 
-Crea un objeto de tipo Paciente
-Asigna los valores ingresados por el usuario
-Llama al método mostrarInformacion() para mostrar los datos en consola
-📘 Recursos útiles:
-🔗 Entrada de usuario en Java – W3Schools
-🔗 Clases en Java – W3Schools
+En esta sección, aprenderás:
 
-🧠 Nota:
-Este reto está diseñado para reforzar los fundamentos de Java y la Programación Orientada a Objetos (POO), utilizando dos archivos diferentes uno para el objeto Paciente y otro archivo el cual ejecuta el código.
+- 🔹 Conceptos clave de Java  
+- 🔹 Estructura básica de un programa Java  
+- 🔹 Compilación y ejecución desde la línea de comandos  
 
-🏆 Nos vemos en el siguiente reto, ¡mucho éxito!
+### 🧠 2. Fundamentos de la Programación Orientada a Objetos (POO)
+
+La POO permite construir programas organizados y reutilizables. Los **principios clave** son:
+
+- 🔐 **Encapsulación:** Control del acceso a los datos  
+- 🧬 **Herencia:** Reutilización del código entre clases  
+- 🎭 **Polimorfismo:** Comportamiento diferente según el objeto  
+- 🧊 **Abstracción:** Ocultar detalles innecesarios y mostrar solo lo esencial
+
+📜 **Ejemplo 02:** *Creando nuestra primera clase en Java*  
+🔥 **Reto 01:** *Registro de pacientes*
+
+
+
+### 🧱 3. Clases y Objetos en Java
+
+Las **clases** son plantillas para crear **objetos**, los cuales tienen atributos y métodos.
+
+Aprenderás a:
+
+- 🔹 Definir y usar clases  
+- 🔹 Crear e instanciar objetos  
+- 🔹 Implementar métodos y constructores  
+- 🔹 Utilizar modificadores de acceso (`public`, `private`, `protected`)
+
+📜 **Ejemplo 03:** *Definiendo una clase y creando objetos*
+
+---
+
+### 🚀 4. Introducción a `record` y `sealed classes` en Java
+
+Las versiones más recientes de Java han introducido nuevas formas de definir clases:
+
+- 📌 `record`: Crea clases **inmutables** con menos código  
+- 🛡️ `sealed class`: **Restringe** qué clases pueden heredar de una clase base
+
+📜 **Ejemplo 04:** *Uso de `record` y `sealed classes`*  
+🔥 **Reto 02:** *Registro básico de entradas*
+
