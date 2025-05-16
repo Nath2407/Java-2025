@@ -1,0 +1,23 @@
+public class Pasajero {
+    private String nombre;    // Solo accesible dentro de la clase
+    protected int edad;       // Accesible dentro del paquete y subclases
+    public String pasaporte;  // Accesible desde cualquier lugar
+
+    public Pasajero(String nombre, int edad, String pasaporte) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.pasaporte = pasaporte;
+    }
+
+    // Método público para acceder al nombre (getter)
+    public String getNombre() {
+        return nombre;
+    }
+
+    public static void main(String[] args) {
+        Pasajero p = new Pasajero("Ana", 30, "A12345678");
+        System.out.println("Nombre: " + p.getNombre());
+        System.out.println("Edad: " + p.edad);
+        System.out.println("Pasaporte: " + p.pasaporte);
+    }
+}
