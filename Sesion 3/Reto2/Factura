@@ -1,0 +1,24 @@
+import java.util.Optional;
+
+public class Factura {
+    // Atributos privados
+    private double monto;
+    private String descripcion;
+    private Optional<String> rfc;
+
+    // Constructor
+    public Factura(double monto, String descripcion, String rfc) {
+        this.monto = monto;
+        this.descripcion = descripcion;
+        this.rfc = Optional.ofNullable(rfc);
+    }
+
+    // Método para obtener el resumen de la factura
+    public String getResumen() {
+        String rfcMostrar = rfc.orElse("[No proporcionado]");
+        return "📄 Factura generada:\n" +
+               "Descripción: " + descripcion + "\n" +
+               "Monto: $" + monto + "\n" +
+               "RFC: " + rfcMostrar;
+    }
+}
